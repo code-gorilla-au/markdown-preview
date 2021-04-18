@@ -11,6 +11,11 @@ body {
   padding: 0;
   background-color: var(--colour-dark-shade-default);
 }
+
+.title {
+  color: var(--colour-light-shade-default);
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

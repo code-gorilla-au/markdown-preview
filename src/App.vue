@@ -1,5 +1,5 @@
 <template>
-  <h1>Markdown Preview</h1>
+  <h1 class="title">Markdown Preview</h1>
   <div class="markdown-preview-grid">
     <Editor class="grid-item" v-model="code" />
     <div class="preview-area grid-item" v-html="preview"></div>
@@ -40,7 +40,7 @@ export default defineComponent({
   height: 90%;
 }
 .preview-area {
-  border: 1px solid var(--colour-primary-default);
+  background-color: var(--colour-light-shade-default);
   padding: 1rem;
   margin: 0;
 }
