@@ -28,13 +28,13 @@ export default defineComponent({
   width: 100%;
   resize: none;
   margin: 0;
+  padding: 1rem;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
   border: none;
   overflow: auto;
   outline: none;
-  padding: 1rem;
 }
 .code-area:focus {
   border: none;
