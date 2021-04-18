@@ -3,6 +3,7 @@
     <textarea
       class="code-area"
       :value="modelValue"
+      @mouseup="emitSelection"
       @input="$emit('update:modelValue', $event.target.value)"
     ></textarea>
   </div>
@@ -11,7 +12,7 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'Editor',
+  name: 'CodeEditor',
   props: {
     modelValue: {
       type: String,
@@ -19,7 +20,14 @@ export default defineComponent({
       default: '',
     },
   },
-  setup() {},
+  setup() {
+    function emitSelection(event: Event) {
+      console.log(event);
+    }
+    return {
+      emitSelection,
+    };
+  },
 });
 </script>
 <style scoped>
