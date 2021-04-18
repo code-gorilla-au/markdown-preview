@@ -1,7 +1,7 @@
 <template>
   <h1 class="text-4xl">Markdown Preview</h1>
   <div class="container">
-    <textarea class="code-area border-2" v-model="code" />
+    <Editor v-model="code" />
     <p class="preview-area border-2" v-html="preview"></p>
   </div>
 </template>
@@ -12,7 +12,7 @@ import marked from 'marked';
 
 export default defineComponent({
   name: 'App',
-  components: {},
+  components: { Editor },
   setup() {
     const code = ref('');
     const preview = computed(() => {

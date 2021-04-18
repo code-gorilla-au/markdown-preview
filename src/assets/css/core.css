@@ -16,11 +16,7 @@ body {
 .container {
   width: min(100%, 900px);
 }
-.code-area {
-  width: 50%;
-  height: 50%;
-  resize: none;
-}
+
 .preview-area {
   width: 50%;
   height: 50%;
