@@ -1,14 +1,16 @@
 <template>
-  <h1 class="text-4xl">Markdown Preview</h1>
-  <div class="container">
-    <Editor v-model="code" />
-    <p class="preview-area border-2" v-html="preview"></p>
+  <h1>Markdown Preview</h1>
+  <div class="markdown-preview-grid">
+    <Editor class="grid-item" v-model="code" />
+    <div class="preview-area grid-item" v-html="preview"></div>
   </div>
 </template>
 
 <script lang="ts">
 import { computed, defineComponent, ref } from 'vue';
 import marked from 'marked';
+
+import Editor from '@/components/CodeEditor.vue';
 
 export default defineComponent({
   name: 'App',
@@ -26,4 +28,20 @@ export default defineComponent({
 });
 </script>
 
-<style></style>
+<style scope>
+.markdown-preview-grid {
+  width: min(100%, 900px);
+  display: flex;
+  justify-content: space-between;
+  height: 90%;
+}
+.grid-item {
+  width: 46%;
+  height: 90%;
+}
+.preview-area {
+  border: 1px solid var(--colour-primary-default);
+  padding: 1rem;
+  margin: 0;
+}
+</style>

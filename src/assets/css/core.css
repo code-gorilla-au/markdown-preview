@@ -1,7 +1,15 @@
+:root {
+  --colour-primary-default: #c44435;
+  --colour-dark-accent-default: #d89f4a;
+  --colour-light-accent-default: #ca9ca2;
+  --colour-light-shade-default: #f9f7f6;
+  --colour-dark-shade-default: #262333;
+}
 html,
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--colour-dark-shade-default);
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -12,12 +20,4 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-.container {
-  width: min(100%, 900px);
-}
-
-.preview-area {
-  width: 50%;
-  height: 50%;
 }
