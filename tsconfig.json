@@ -15,7 +15,12 @@
     "types": [
       "vite/client",
       "types/marked"
-    ]
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
   },
   "include": [
     "src/**/*.ts",

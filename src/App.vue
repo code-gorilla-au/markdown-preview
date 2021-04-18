@@ -1,7 +1,9 @@
 <template>
-  <h1>Markdown Preview</h1>
-  <input v-model.lazy="code" />
-  <p v-html="preview"></p>
+  <h1 class="text-4xl">Markdown Preview</h1>
+  <div class="container">
+    <textarea class="code-area border-2" v-model="code" />
+    <p class="preview-area border-2" v-html="preview"></p>
+  </div>
 </template>
 
 <script lang="ts">
@@ -24,10 +26,4 @@ export default defineComponent({
 });
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-</style>
+<style></style>
