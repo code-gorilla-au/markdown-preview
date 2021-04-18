@@ -14,11 +14,11 @@
     ],
     "types": [
       "vite/client",
-      "types/marked"
+      "marked"
     ],
     "paths": {
       "@/*": [
-        "src/*"
+        "./src/*"
       ]
     },
   },
