@@ -40,6 +40,7 @@ export default defineComponent({
   height: 90%;
 }
 .preview-area {
+  word-wrap: break-word;
   background-color: var(--colour-light-shade-default);
   padding: 1rem;
   margin: 0;
