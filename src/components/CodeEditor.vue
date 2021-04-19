@@ -43,6 +43,7 @@ export default defineComponent({
   border: none;
   overflow: auto;
   outline: none;
+  background-color: var(--colour-light-shade-default);
 }
 .code-area:focus {
   border: none;
